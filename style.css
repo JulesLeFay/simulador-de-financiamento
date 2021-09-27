@@ -1,0 +1,33 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(228, 246, 187);
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background-color: azure;
+  max-width: 900px;
+  padding: 2rem;
+}
+
+table {
+  padding: 3px;
+  margin: 3px;
+  border-collapse: collapse;
+  width: 100%;
+}
+h1,
+h2,
+th {
+  color: rgb(25, 25, 121);
+}
+td,
+th {
+  border: solid 2px rgb(25, 25, 121);
+  padding: 3px;
+  text-align: center;
+}

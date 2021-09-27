@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Financiamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+
+    <div>
+      <h1>Simulação de Financiamento</h1>
+    </div>
+    <div id="entries">
+      <label for="inputValor">Valor:</label>
+      <input type="number" name="inputValor" id="inputValor" value="200000">
+      <label for="inputPrazo">Prazo (anos):</label>
+      <input type="number" name="inputPrazo" id="inputPrazo" value="20">
+      <label for="inputJuros">Juros ao Ano: </label>
+      <input type="number" name="inputJuros" id="inputJuros" value="0.08">
+    </div>
+    <br/>
+    <div>
+      <button onclick="simular()" id='btnSim' >Simular</button>
+    </div>
+    <h2>Resultados</h2>
+    <div id="results" >
+      <label for="prazoMeses">Prazo Meses</label>
+      <input type="number" name="prazoMeses" id="prazoMeses" readonly>
+      <label for="jurosAoMes">Juros ao Mês</label>
+      <input type="number" name="jurosAoMes" id="jurosAoMes" readonly>
+      <label for="jurosAcumulados">Juros Acumulados</label>
+      <input type="number" name="jurosAcumulados" id="jurosAcumulados" readonly >
+    </div>
+    <h2>Parcelas</h2>
+    <div id="resTable" >
+      <table>
+        <thead>
+          <tr>
+            <th>Prestação</th>
+            <th>Amortização</th>
+            <th>Juros</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+    
+    
+    
+    <script src="script.js" defer></script>
+  </body>
+  </html>
